@@ -1,0 +1,105 @@
+/* static/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    /* Gradient background */
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Slight transparency for a soft look */
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #4a4e69;
+    text-shadow: 1px 1px 1px #f9c74f;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #4a4e69;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #f9c74f;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: #f9c74f;
+    color: #343a40;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #f9844a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: #f4f4f4;
+    border: 2px solid #4a4e69;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #c9c9ff;
+}
+
+a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #4a4e69;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f9c74f;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.no-tasks {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
